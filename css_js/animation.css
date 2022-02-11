@@ -1,0 +1,61 @@
+.typing-title {
+  width: 40ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.image-anim {
+  animation: img 1s ease 0s 1 normal forwards;
+}
+
+.image-anim-2 {
+  animation: img2 1s ease 0s 1 normal forwards;
+}
+
+.image-anim:hover {
+  animation: img 1s ease 0s infinite normal forwards;
+ }
+
+.image-anim-2:hover {
+  animation: img2 1s ease 0s infinite normal forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 0% 50%;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes img2 {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 50% 0%;
+  }
+  
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+  }
+}

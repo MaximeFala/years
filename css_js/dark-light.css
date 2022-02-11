@@ -1,0 +1,52 @@
+:root
+{
+    --body-background-color:#540304;
+    --body-text-color:#ffffff;
+    --button-color-button-background-color:#000000;
+}
+
+@media(prefers-color-scheme:dark)
+{
+    :root
+    {
+        --body-background-color: #992d2d;
+        --body-text-color:#ffffff;
+        --button-color-button-background-color:#f1f1f1;
+        --text-color-button-background-color:#040404;
+    }
+
+}
+.gray-accent
+{
+    background-color:var(--body-background-color);
+    color:var(--body-text-color);
+}
+
+.color-buttom
+{
+    background-color:var(--button-color-button-background-color);
+    color:var(--body-text-color);
+}
+
+@media(prefers-color-scheme:light)
+{
+    :root
+    {
+        --body-background-color:#ce0003;
+        --body-text-color:#000000;
+        --button-color-button-background-color:#290000;
+    }
+
+}
+.gray-accent
+{
+    background-color:var(--body-background-color);
+    color:var(--body-text-color);
+}
+
+.color-buttom
+{
+    background-color:var(--button-color-button-background-color);
+    color:var(--text-color-button-background-color);
+}
+
